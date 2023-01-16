@@ -1,8 +1,10 @@
 function stairsIn20(stairs: number[][]): number {
-    let result = 0;
+    let result: number = 0;
 
-
-    for 
+    for (let day of stairs) {
+        result += day.reduce((acc, item) => acc + item);
+    }
+    return result * 20; 
 };
 
 let sunday = [6737, 7244, 5776, 9826, 7057, 9247, 5842, 5484, 6543, 5153, 6832, 8274,
